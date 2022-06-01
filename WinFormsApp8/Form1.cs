@@ -20,7 +20,6 @@ namespace WinFormsApp8
                 case 2: Price_txt.Text = "0,80";break;
                 default: Price_txt.Text="0,00"; break;
             }
-
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

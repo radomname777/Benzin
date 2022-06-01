@@ -410,9 +410,9 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(272, 35);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 25);
+            this.label6.Size = new System.Drawing.Size(46, 25);
             this.label6.TabIndex = 12;
-            this.label6.Text = "label6";
+            this.label6.Text = "0,00";
             // 
             // button1
             // 
@@ -428,7 +428,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(531, 415);
             this.Controls.Add(this.Sum);
             this.Controls.Add(this.kafe);
