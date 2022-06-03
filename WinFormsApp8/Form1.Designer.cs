@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Oil = new System.Windows.Forms.GroupBox();
             this.PriceLtxt = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -463,7 +462,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::WinFormsApp8.Properties.Resources.yakinlarda_benzin_istasyonu_var_mi_benzin_14674620_4585_amp;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(531, 415);
             this.Controls.Add(this.Sum);

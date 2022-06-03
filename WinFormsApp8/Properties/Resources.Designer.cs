@@ -79,5 +79,15 @@ namespace WinFormsApp8.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yakinlarda_benzin_istasyonu_var_mi_benzin_14674620_4585_amp {
+            get {
+                object obj = ResourceManager.GetObject("yakinlarda-benzin-istasyonu-var-mi-benzin-14674620_4585_amp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
