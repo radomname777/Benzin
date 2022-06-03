@@ -130,10 +130,10 @@ namespace WinFormsApp8
         {
             if (!Mybool)
                 label6.Text = (Convert.ToDecimal(txt_price.Text) + Convert.ToDecimal(label2.Text)).ToString();
-            
             else
                 label6.Text =(Convert.ToDecimal(label2.Text) + Convert.ToDecimal(label3.Text)).ToString();
             timer1.Stop();
+            if (label6.Text!="0,00")MessageBox.Show($"Total Price: {label6.Text}", "Thank you for shopping with us");
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

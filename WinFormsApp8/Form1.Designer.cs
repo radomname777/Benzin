@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Oil = new System.Windows.Forms.GroupBox();
             this.PriceLtxt = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,6 +57,7 @@
             this.Gamburger = new System.Windows.Forms.CheckBox();
             this.Hotdog = new System.Windows.Forms.CheckBox();
             this.Sum = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -63,6 +65,7 @@
             this.Oil.SuspendLayout();
             this.kafe.SuspendLayout();
             this.Sum.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Oil
@@ -130,24 +133,25 @@
             // 
             // literPrice
             // 
+            this.literPrice.BackColor = System.Drawing.Color.Transparent;
             this.literPrice.FlatAppearance.BorderSize = 5;
-            this.literPrice.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.literPrice.ForeColor = System.Drawing.Color.Black;
+            this.literPrice.ForeColor = System.Drawing.Color.White;
             this.literPrice.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.literPrice.Location = new System.Drawing.Point(17, 162);
+            this.literPrice.Location = new System.Drawing.Point(31, 160);
             this.literPrice.Name = "literPrice";
-            this.literPrice.Size = new System.Drawing.Size(50, 19);
+            this.literPrice.Size = new System.Drawing.Size(69, 19);
             this.literPrice.TabIndex = 5;
             this.literPrice.TabStop = true;
             this.literPrice.Tag = "2";
             this.literPrice.Text = "Price";
-            this.literPrice.UseVisualStyleBackColor = true;
+            this.literPrice.UseVisualStyleBackColor = false;
             this.literPrice.CheckedChanged += new System.EventHandler(this.Radiobutton_CheckedChanged);
             // 
             // liter
             // 
             this.liter.AutoSize = true;
-            this.liter.Location = new System.Drawing.Point(17, 119);
+            this.liter.ForeColor = System.Drawing.Color.White;
+            this.liter.Location = new System.Drawing.Point(31, 123);
             this.liter.Name = "liter";
             this.liter.Size = new System.Drawing.Size(48, 19);
             this.liter.TabIndex = 4;
@@ -202,6 +206,7 @@
             // 
             // kafe
             // 
+            this.kafe.BackColor = System.Drawing.Color.Transparent;
             this.kafe.Controls.Add(this.cola_txt);
             this.kafe.Controls.Add(this.fri_txt);
             this.kafe.Controls.Add(this.gamburger_txt);
@@ -335,9 +340,11 @@
             // coco
             // 
             this.coco.AutoSize = true;
-            this.coco.Location = new System.Drawing.Point(17, 164);
+            this.coco.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.coco.ForeColor = System.Drawing.Color.White;
+            this.coco.Location = new System.Drawing.Point(6, 163);
             this.coco.Name = "coco";
-            this.coco.Size = new System.Drawing.Size(77, 19);
+            this.coco.Size = new System.Drawing.Size(93, 24);
             this.coco.TabIndex = 3;
             this.coco.Tag = "4,40";
             this.coco.Text = "coko cola";
@@ -347,9 +354,11 @@
             // fri
             // 
             this.fri.AutoSize = true;
-            this.fri.Location = new System.Drawing.Point(17, 123);
+            this.fri.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fri.ForeColor = System.Drawing.Color.White;
+            this.fri.Location = new System.Drawing.Point(6, 122);
             this.fri.Name = "fri";
-            this.fri.Size = new System.Drawing.Size(87, 19);
+            this.fri.Size = new System.Drawing.Size(110, 24);
             this.fri.TabIndex = 2;
             this.fri.Tag = "7,20";
             this.fri.Text = "French fries";
@@ -359,9 +368,11 @@
             // Gamburger
             // 
             this.Gamburger.AutoSize = true;
-            this.Gamburger.Location = new System.Drawing.Point(17, 82);
+            this.Gamburger.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Gamburger.ForeColor = System.Drawing.Color.White;
+            this.Gamburger.Location = new System.Drawing.Point(6, 81);
             this.Gamburger.Name = "Gamburger";
-            this.Gamburger.Size = new System.Drawing.Size(86, 19);
+            this.Gamburger.Size = new System.Drawing.Size(108, 24);
             this.Gamburger.TabIndex = 1;
             this.Gamburger.Tag = "5,40";
             this.Gamburger.Text = "Gamburger";
@@ -371,9 +382,11 @@
             // Hotdog
             // 
             this.Hotdog.AutoSize = true;
-            this.Hotdog.Location = new System.Drawing.Point(17, 41);
+            this.Hotdog.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Hotdog.ForeColor = System.Drawing.Color.White;
+            this.Hotdog.Location = new System.Drawing.Point(6, 40);
             this.Hotdog.Name = "Hotdog";
-            this.Hotdog.Size = new System.Drawing.Size(70, 19);
+            this.Hotdog.Size = new System.Drawing.Size(85, 24);
             this.Hotdog.TabIndex = 0;
             this.Hotdog.Tag = "4";
             this.Hotdog.Text = "Hot dog";
@@ -382,22 +395,37 @@
             // 
             // Sum
             // 
+            this.Sum.BackColor = System.Drawing.Color.Transparent;
+            this.Sum.CausesValidation = false;
+            this.Sum.Controls.Add(this.pictureBox1);
             this.Sum.Controls.Add(this.label7);
             this.Sum.Controls.Add(this.label6);
             this.Sum.Controls.Add(this.button1);
-            this.Sum.Location = new System.Drawing.Point(12, 319);
+            this.Sum.ForeColor = System.Drawing.Color.Red;
+            this.Sum.Location = new System.Drawing.Point(12, 299);
             this.Sum.Name = "Sum";
-            this.Sum.Size = new System.Drawing.Size(502, 84);
+            this.Sum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Sum.Size = new System.Drawing.Size(502, 104);
             this.Sum.TabIndex = 1;
             this.Sum.TabStop = false;
             this.Sum.Text = "sum";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WinFormsApp8.Properties.Resources.giphy;
+            this.pictureBox1.Location = new System.Drawing.Point(17, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(394, 61);
+            this.label7.Location = new System.Drawing.Point(422, 67);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(30, 17);
             this.label7.TabIndex = 12;
@@ -408,7 +436,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(272, 35);
+            this.label6.Location = new System.Drawing.Point(342, 41);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 25);
             this.label6.TabIndex = 12;
@@ -416,19 +444,27 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(103, 22);
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(157, 28);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 56);
             this.button1.TabIndex = 16;
             this.button1.Text = "Sum";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.IndianRed;
+            this.BackColor = System.Drawing.Color.Firebrick;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(531, 415);
             this.Controls.Add(this.Sum);
             this.Controls.Add(this.kafe);
@@ -441,6 +477,7 @@
             this.kafe.PerformLayout();
             this.Sum.ResumeLayout(false);
             this.Sum.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -478,5 +515,6 @@
         private TextBox fri_txt;
         private TextBox gamburger_txt;
         private TextBox hotdog_txt;
+        private PictureBox pictureBox1;
     }
 }
